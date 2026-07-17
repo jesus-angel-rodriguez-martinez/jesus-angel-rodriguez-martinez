@@ -1,71 +1,39 @@
-<img src="svg/header.svg"  alt="Header image" />
 
-```javascript
-curl -X GET \
-    -H "Content-Type: application/json" \
-    "http://sudo-von.com/api/v1/user/username/sudo-von"
-```
+<div align="center" style="padding: 10px 0;">
+  <img src="https://gitskins.com/api/section/hero?username=jesus-angel-rodriguez-martinez&theme=github" alt="jesus-angel-rodriguez-martinez" />
+</div>
 
-```typescript
+<div align="center" style="padding: 10px 0;">
+  <img src="https://gitskins.com/api/section/stats?username=jesus-angel-rodriguez-martinez&theme=github" alt="jesus-angel-rodriguez-martinez GitHub stats" />
+</div>
+
+<div align="center" style="padding: 10px 0;">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,go,docker,git,redux,react,nextjs,nodejs,express,nestjs,graphql,postgres,redis,aws" alt="Tech Stack" />
+  </a>
+</div>
+
+ ```json
 {
-    "id": "60603a5aaa037f0008ed81f9",
-    "name": "Jesús Ángel Rodríguez Martínez",
-    "email": "sudo.von.contact@gmail.com",
-    "username": "sudo_von",
-    "workplaces": [
-        {
-            "id": "649b478da7e8c4033849e8a7",
-            "company": "Intel Corporation",
-            "positions": ["Full stack engineer", "Cybersecurity researcher", "Frontend subject matter expert"]
-        },
-        {
-            "id": "649b4806d1a3e5ddcdbd4c00",
-            "company": "Tredicom",
-            "positions": ["Full stack developer"]
-        },
-        {
-            "id": "649b4806d1a3e5ddcdbd4c00",
-            "company": "Evotek",
-            "positions": ["Full stack developer"]
-        },
-    ],
-    "about": {
-        "title": "Computer systems engineer",
-        "position": "Software engineer",
-        "certifications": ["Certified ethical hacker and security professional (C|EHSP)"],
-        "interests": ["Javascript fanatic", "Typescript enthusiast", "Passionate about ethical hacking"],
-        "quote": "At first, dreams seem impossible, then improbable, and eventually inevitable"
-    }
+  "id": "88b28755-d355-41ee-bcea-ac6c1879b03a",
+  "name": "Jesús Ángel Rodríguez Martínez",
+  "username": "jesus-angel-rodriguez-martinez",
+  "email": "jesus.arm.dev@gmail.com",
+  "about": {
+    "title": "Senior Software Engineer",
+    "status": "Available for exciting opportunities"
+  },
+  "education": [
+    { "degree": "Computer Systems Engineer" }
+  ],
+  "certifications": [
+    "Certified Ethical Hacker & Security Professional (C|EHSP)"
+  ],
+  "workplaces": [
+    { "company": "Trove", "role": "Senior Full Stack Engineer", "from": "2023-10-01", "to": "2026-05-31" },
+    { "company": "Intel Corporation", "role": "Full Stack Engineer", "from": "2021-12-01", "to": "2023-05-31" },
+    { "company": "Tredicom", "role": "Full Stack Developer", "from": "2020-11-01", "to": "2021-11-30" },
+    { "company": "Evotek", "role": "Full Stack Developer", "from": "2019-06-01", "to": "2020-11-30" }
+  ]
 }
-```
-
-```tsx
-import { FC } from 'react';
-import { useUser } from '@user/hooks';
-import { Loader, Error } from '@common/components';
-import { Profile, Workplaces, About } from '@user/components';
-
-type UserProps = {
-    id: string;
-};
-
-const User: FC<UserProps> = ({ id }) => {
-    const { data, isLoading, error } = useUser(id);
-
-    if (isLoading) return <Loader />;
-
-    if (error) return <Error message={error} />;
-
-    const { name, email, username, workplaces, about } = data;
-
-    return(
-        <>
-            <Profile name={name} email={email} username={username} />
-            <Workplaces workplaces={workplaces} />
-            <About about={about} />
-        </>
-    );
-};
-
-export default User;
 ```
