@@ -1,17 +1,23 @@
 
-<div align="center" style="padding: 10px 0;">
+<div align="center">
   <img src="https://gitskins.com/api/section/hero?username=jesus-angel-rodriguez-martinez&theme=github" alt="jesus-angel-rodriguez-martinez" />
 </div>
 
-<div align="center" style="padding: 10px 0;">
+<br />
+
+<div align="center">
   <img src="https://gitskins.com/api/section/stats?username=jesus-angel-rodriguez-martinez&theme=github" alt="jesus-angel-rodriguez-martinez GitHub stats" />
 </div>
 
-<div align="center" style="padding: 10px 0;">
+<br />
+
+<div align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=js,ts,go,docker,git,redux,react,nextjs,nodejs,express,nestjs,graphql,postgres,redis,aws" alt="Tech Stack" />
   </a>
 </div>
+
+<br />
 
  ```json
 {
