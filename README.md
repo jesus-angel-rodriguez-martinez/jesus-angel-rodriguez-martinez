@@ -36,6 +36,7 @@
     "Certified Ethical Hacker & Security Professional (C|EHSP)"
   ],
   "workplaces": [
+    { "company": "Nordstrom", "role": "Senior Full Stack Engineer", "from": "2026-09-01" },
     { "company": "Trove", "role": "Senior Full Stack Engineer", "from": "2023-10-01", "to": "2026-05-31" },
     { "company": "Intel Corporation", "role": "Full Stack Engineer", "from": "2021-12-01", "to": "2023-05-31" },
     { "company": "Tredicom", "role": "Full Stack Developer", "from": "2020-11-01", "to": "2021-11-30" },
